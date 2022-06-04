@@ -1,0 +1,541 @@
+p {color: black;}
+h1,h2,h3,h4,h5,h6{color: black}
+.logo {
+    height: 3rem;
+    width: 3rem;
+}
+.scrum{
+    background: linear-gradient(0deg, rgba(64,195,34,1) 0%, rgba(45,253,114,1) 100%);
+}
+.sticky{
+    height: 5rem;
+    width: 5rem;
+    cursor: grab;
+}
+.page-heading{
+    text-align: center;
+}
+.card-heading {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*button1*/
+
+.btn1 {
+  appearance: none;
+  background-color: white;
+  border-radius: 40em;
+  border-style: none;
+  
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: auto;
+  width: auto;
+}
+
+.btn1:hover {
+  background-color: #653780;
+  box-shadow: #3f1651 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.btn1:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .btn1 {
+    font-size: 1rem;
+    padding: .75rem 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*button2 dark interior light exterior*/
+
+.btn2 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .btn2 {
+    padding: 19px 32px;
+  }
+}
+
+.btn2:before,
+.btn2:after {
+  border-radius: 80px;
+}
+
+.btn2:before {
+    background-image: linear-gradient(0deg, rgba(34,91,195,1) 0%, rgba(233,45,253,1) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+color: black;
+}
+
+.btn2:after {
+  background-color: initial;
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+  color: black;
+}
+
+.btn2:hover:not(:disabled):before {
+    background: linear-gradient(0deg, rgba(34,91,195,1) 0%, rgba(233,45,253,1) 100%);
+    color: black;
+}
+
+.btn2:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.btn2:active:not(:disabled) {
+  color: #ccc;
+}
+
+.btn2:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  color: black;
+}
+
+.btn2:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+  color: black;
+}
+
+.btn2:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+
+
+
+
+
+
+/*next button*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn3 {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.btn3:focus {
+   outline: none; 
+}
+
+.btn3:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.btn3 span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.btn3:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.btn3:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.btn3:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.btn3:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FBC638;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hide registration forms*/
+.registrationformcompany {
+  display: none;
+}
+.registrationformcontact {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/*registration lead generation form*/
+
+    body, div, h1, form, input, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    }
+    h1 {
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    }
+    p {
+    font-size: 12px;
+    }
+    hr {
+    color: #a9a9a9;
+    opacity: 0.3;
+    }
+    .main-block {
+    max-width: 340px; 
+    min-height: 460px; 
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 5px; 
+    border: solid 1px #ccc;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    background: #ebebeb; 
+    }
+    form {
+    margin: 0 30px;
+    }
+    .account-type, .gender {
+    margin: 15px 0;
+    }
+    input[type=radio] {
+    display: none;
+    }
+    label#icon {
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+    }
+    label.radio {
+    position: relative;
+    display: inline-block;
+    padding-top: 4px;
+    margin-right: 20px;
+    text-indent: 30px;
+    overflow: visible;
+    cursor: pointer;
+    }
+    label.radio:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1c87c9;
+    }
+    label.radio:after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    top: 8px;
+    left: 4px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+    }
+    input[type=radio]:checked + label:after {
+    opacity: 1;
+    }
+    input[type=text], input[type=password] {
+    width: calc(100% - 57px);
+    height: 36px;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px; 
+    border-radius: 0 5px 5px 0;
+    border: solid 1px #cbc9c9; 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    background: #fff; 
+    }
+    input[type=password] {
+    margin-bottom: 15px;
+    }
+    #icon {
+    display: inline-block;
+    padding: 9.3px 15px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    background: #1c87c9;
+    color: #fff;
+    text-align: center;
+    }
+    .btn-block {
+    margin-top: 10px;
+    text-align: center;
+    }
+    button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px; 
+    border: none;
+    background: #1c87c9; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    }
+    button:hover {
+    background: #26a9e0;
+    }
+
+    /*user page project hover animation*/
+    .projectcard:hover {
+      cursor: pointer;
+      background: linear-gradient(0deg, rgba(34,91,195,1) 0%, rgba(233,45,253,1) 100%);
+    }
+
+    .subtitle {
+      color: black;
+    }
+
+    /*flip card animation*/
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.signinlogo {
+ 
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  
+}
+
+.signin {
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.social {
+  display: inline-block;
+}
+  
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
